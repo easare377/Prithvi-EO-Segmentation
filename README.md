@@ -63,7 +63,7 @@ above (see the training notebook for detailed descriptions).
 1. **Clone this repository** and change into the project directory:
 
    ```bash
-   git clone https://github.com/<your‑username>/Prithvi‑EO‑Segmentation.git
+   git clone https://github.com/easare377/Prithvi-EO-Segmentation.git
    cd Prithvi‑EO‑Segmentation
    ```
 

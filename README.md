@@ -18,15 +18,15 @@ multi‑spectral Sentinel/Harmonized Landsat–Sentinel (HLS) data, train
 segmentation models with the **Prithvi EO** foundation models using
 TerraTorch, evaluate model performance, and generate georeferenced land‑
 cover footprints.  Prithvi‑EO models are transformer‑based geospatial
-foundation models trained on millions of spatio‑temporal satellite samples
-【422421131852148†L306-L329】.  They extend the Vision Transformer (ViT)
+foundation models trained on millions of spatio‑temporal satellite samples.
+They extend the Vision Transformer (ViT)
 architecture by replacing 2‑D patch embeddings and positional embeddings
 with **3‑D** counterparts to support sequences of images over time and by
-adding learnable temporal and location embeddings【422421131852148†L306-L329】.
+adding learnable temporal and location embeddings.
 Prithvi‑EO‑2.0 models are trained on a global HLS dataset; the largest
 600M‑parameter variant with temporal and location embeddings outperforms
 earlier Prithvi versions and other geospatial foundation models by roughly
-8 percentage points across a range of remote‑sensing tasks【422421131852148†L349-L354】.
+8 percentage points across a range of remote‑sensing tasks.
 
 ## Contents
 
@@ -54,7 +54,7 @@ above (see the training notebook for detailed descriptions).
 | **Prithvi‑EO‑2.0‑300M** | 300 M | Larger backbone trained on global HLS data (no temporal/location embeddings) |
 | **Prithvi‑EO‑2.0‑300M‑TL** | 300 M | Adds temporal & location embeddings to the 300 M model |
 | **Prithvi‑EO‑2.0‑600M** | 600 M | Very large model without temporal/location embeddings |
-| **Prithvi‑EO‑2.0‑600M‑TL** | 600 M | Largest model with both temporal and location embeddings; this variant outperforms earlier Prithvi versions across diverse tasks【422421131852148†L349-L354】 |
+| **Prithvi‑EO‑2.0‑600M‑TL** | 600 M | Largest model with both temporal and location embeddings; this variant outperforms earlier Prithvi versions across diverse tasks |
 
 ## Getting started
 
@@ -113,7 +113,7 @@ semantic segmentation model using PyTorch and TerraTorch:
    rotations and colour jitter).
 3. **Select a backbone** from the table above and instantiate a
    segmentation model.  The model uses the Prithvi‑EO encoder and a
-   lightweight decoder (e.g., U‑Net‑style).  Pretrained weights can be
+   lightweight decoder (e.g., UpperNet, FCN ,U‑Net‑style).  Pretrained weights can be
    loaded for transfer learning or training from scratch.
 4. **Train** the model using your favourite optimiser.  The notebook
    includes a simple training loop with checkpointing and utilities for
@@ -179,9 +179,9 @@ segmentation model.*
 If you use the Prithvi‑EO models in your work, please cite the official
 Prithvi‑EO‑2.0 paper and associated resources.  The architecture uses
 masked autoencoding with 3‑D patch embeddings and includes time and
-location encodings【422421131852148†L306-L329】.  The largest model variant
+location encodings.  The largest model variant
 exceeds the performance of earlier geospatial foundation models by
-approximately 8 percentage points across benchmarks【422421131852148†L349-L354】.
+approximately 8 percentage points across benchmarks.
 
 ## Contributing
 

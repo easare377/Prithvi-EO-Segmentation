@@ -145,34 +145,21 @@ Large‑scale inference on full‑resolution scenes is handled in
 
 ## Example results
 
-Below are example figures generated using this pipeline.  The first
-illustration is a conceptual diagram showing how satellite images are
-converted into segmentation masks.  The second image shows an example
-overlay produced by the segmentation model on a farmland scene, and the
-third image depicts irrigation patterns detected from remote‑sensing data.
+Below are example figures generated using this pipeline, including real-world environmental impacts and model outputs.
 
-### Conceptual diagram
+### Illegal mining (Galamsey) impact
 
-![Conceptual segmentation workflow](./concept_segmentation.png)
+![Aerial view](./galamsey_impact.png)
 
-*An artistic representation of satellite image segmentation: the left panel
-shows a stylised satellite view of agricultural land while the right panel
-shows a simplified mask produced by a segmentation model.*
+*Aerial view of an illegal mining (galamsey) site showing deforestation, exposed soil, and contaminated water pools. These are typical signatures the segmentation model learns to detect.*
 
-### Farmland segmentation overlay
+### Sentinel-2 imagery and segmentation mask
 
-![Farmland segmentation overlay](./farmland_seg_small.png)
+![Sentinel-2 imagery and segmentation mask](./sentinel2_and_mask.png)
 
-*A cropped and down‑sampled satellite scene over agricultural fields with a
-purple overlay indicating the predicted boundaries of cultivated areas.*
+*Left: Sentinel-2 RGB composite.
+Right: Predicted multiclass segmentation mask highlighting extracted features (e.g., drainage patterns, disturbed land, or mining traces).*
 
-### Irrigation map
-
-![Irrigation segmentation map](./irrigation_map.jpg)
-
-*This remote‑sensing composite highlights irrigation infrastructure in
-farmland.  The colours represent different features detected by the
-segmentation model.*
 
 ## Citing Prithvi‑EO
 

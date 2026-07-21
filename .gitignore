@@ -1,2 +1,12 @@
 # Ignore Python model weights
+models/
 *.pt
+*.pth
+*.ckpt
+
+# Ignore generated prediction outputs
+predictions/
+predictions_unet/
+
+# Ignore generated visualization images
+*.png
